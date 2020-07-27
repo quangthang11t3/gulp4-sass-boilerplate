@@ -1,0 +1,25 @@
+@charset "UTF-8";
+// ===========================
+// base
+// ===========================
+@import "base/reset";
+@import "base/variables";
+@import "base/mixin";
+@import "base/common";
+
+// ===========================
+// components
+// ===========================
+@import "components/header";
+@import "components/footer";
+
+// ===========================
+// libs
+// ===========================
+// @import "libs/slick";
+
+// ===========================
+// pages
+// ===========================
+@import "pages/top";
+// @import "pages/otherpage";

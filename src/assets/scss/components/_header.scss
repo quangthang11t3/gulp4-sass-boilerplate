@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* -------------------
+  HEADER
+--------------------*/
+.header {
+	height: 100px;
+	border: solid 20px green;
+	background-color: red;
+	font-size: fs(14);
+	@include mq() {
+		background-color: yellow;
+	}
+}

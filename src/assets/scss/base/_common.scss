@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* -------------------
+  COMMON
+--------------------*/
+
+// =========================================
+// Font family
+// =========================================
+
+// @font-face{
+//   font-family: EuclidFlex;
+//   src: url('../font/EuclidFlex/EuclidFlex-Regular.eot'); // IE9 Compat Modes
+//   src: url('../font/EuclidFlex/EuclidFlex-Regular.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+//        url('../font/EuclidFlex/EuclidFlex-Regular.woff2') format('woff2'),  Super Modern Browsers 
+//        url('../font/EuclidFlex/EuclidFlex-Regular.woff') format('woff'), // Pretty Modern Browsers
+//        url('../font/EuclidFlex/EuclidFlex-Regular.ttf')  format('truetype'), // Safari, Android, iOS
+//        url('../font/EuclidFlex/EuclidFlex-Regular.svg#svgFontName') format('svg'); // Legacy iOS
+// }
+
+
+// =========================================
+// CONTROL VIEW ELEMENT
+// =========================================
+
+.pc-only {
+  display: block;
+  @include mq() {
+		display: none !important;
+	}
+}
+
+.pc-only2 {
+  display: inline-block;
+  @include mq() {
+	  display: none !important;
+	}
+}
+
+.sp-only {
+  display: none;
+  @include mq() {
+	  display: block !important;
+	}
+}
+

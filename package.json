@@ -1,0 +1,23 @@
+{
+  "name": "gulp-sass",
+  "version": "1.0.0",
+  "description": "Welcome to the Gulp4 SaSS setup using BrowserSync to Automate your changes",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^1.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Quang Thang",
+  "license": "ISC",
+  "homepage": "https://github.com/quangthang11t3"
+}
