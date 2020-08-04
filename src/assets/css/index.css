@@ -346,11 +346,32 @@ textarea {
 */
 /* 
 .example {
-  @include mq(maxmd) {
+  @include mq() {
 	  width: 100%;
 	}
 }
 */
+/* -------------------
+  COMMON
+--------------------*/
+.pc-only {
+  display: block; }
+  @media screen and (max-width: 767px) {
+    .pc-only {
+      display: none !important; } }
+
+.pc-only2 {
+  display: inline-block; }
+  @media screen and (max-width: 767px) {
+    .pc-only2 {
+      display: none !important; } }
+
+.sp-only {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .sp-only {
+      display: block !important; } }
+
 /* -------------------
   HEADER
 --------------------*/
