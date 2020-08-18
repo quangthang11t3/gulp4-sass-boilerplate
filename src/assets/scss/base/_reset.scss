@@ -125,6 +125,11 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
@@ -345,6 +350,8 @@ textarea {
 }
 
 img {
+  width: 100%;
+  height: auto;
   vertical-align: middle;
 }
 
