@@ -107,6 +107,10 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */ }
 
+a {
+  color: inherit;
+  text-decoration: none; }
+
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
@@ -307,6 +311,8 @@ textarea {
   text-shadow: none; }
 
 img {
+  width: 100%;
+  height: auto;
   vertical-align: middle; }
 
 fieldset {
@@ -332,6 +338,147 @@ textarea {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
+
+/* -------------------
+  NO - RESET
+--------------------*/
+.no-reset {
+  /* Begin bidirectionality settings (do not change) */ }
+  .no-reset html, .no-reset address,
+  .no-reset blockquote,
+  .no-reset body, .no-reset dd, .no-reset div,
+  .no-reset dl, .no-reset dt, .no-reset fieldset, .no-reset form,
+  .no-reset frame, .no-reset frameset,
+  .no-reset h1, .no-reset h2, .no-reset h3, .no-reset h4,
+  .no-reset h5, .no-reset h6, .no-reset noframes,
+  .no-reset ol, .no-reset p, .no-reset ul, .no-reset center,
+  .no-reset dir, .no-reset hr, .no-reset menu, .no-reset pre {
+    display: block;
+    unicode-bidi: embed; }
+  .no-reset li {
+    display: list-item; }
+  .no-reset head {
+    display: none; }
+  .no-reset table {
+    display: table; }
+  .no-reset tr {
+    display: table-row; }
+  .no-reset thead {
+    display: table-header-group; }
+  .no-reset tbody {
+    display: table-row-group; }
+  .no-reset tfoot {
+    display: table-footer-group; }
+  .no-reset col {
+    display: table-column; }
+  .no-reset colgroup {
+    display: table-column-group; }
+  .no-reset td, .no-reset th {
+    display: table-cell; }
+  .no-reset caption {
+    display: table-caption; }
+  .no-reset th {
+    font-weight: bolder;
+    text-align: center; }
+  .no-reset caption {
+    text-align: center; }
+  .no-reset body {
+    margin: 8px; }
+  .no-reset h1 {
+    font-size: 2em;
+    margin: .67em 0; }
+  .no-reset h2 {
+    font-size: 1.5em;
+    margin: .75em 0; }
+  .no-reset h3 {
+    font-size: 1.17em;
+    margin: .83em 0; }
+  .no-reset h4, .no-reset p,
+  .no-reset blockquote, .no-reset ul,
+  .no-reset fieldset, .no-reset form,
+  .no-reset ol, .no-reset dl, .no-reset dir,
+  .no-reset menu {
+    margin: 1.12em 0; }
+  .no-reset h5 {
+    font-size: .83em;
+    margin: 1.5em 0; }
+  .no-reset h6 {
+    font-size: .75em;
+    margin: 1.67em 0; }
+  .no-reset h1, .no-reset h2, .no-reset h3, .no-reset h4,
+  .no-reset h5, .no-reset h6, .no-reset b,
+  .no-reset strong {
+    font-weight: bolder; }
+  .no-reset blockquote {
+    margin-left: 40px;
+    margin-right: 40px; }
+  .no-reset i, .no-reset cite, .no-reset em,
+  .no-reset var, .no-reset address {
+    font-style: italic; }
+  .no-reset pre, .no-reset tt, .no-reset code,
+  .no-reset kbd, .no-reset samp {
+    font-family: monospace; }
+  .no-reset pre {
+    white-space: pre; }
+  .no-reset button, .no-reset textarea,
+  .no-reset input, .no-reset select {
+    display: inline-block; }
+  .no-reset big {
+    font-size: 1.17em; }
+  .no-reset small, .no-reset sub, .no-reset sup {
+    font-size: .83em; }
+  .no-reset sub {
+    vertical-align: sub; }
+  .no-reset sup {
+    vertical-align: super; }
+  .no-reset table {
+    border-spacing: 2px; }
+  .no-reset thead, .no-reset tbody,
+  .no-reset tfoot {
+    vertical-align: middle; }
+  .no-reset td, .no-reset th, .no-reset tr {
+    vertical-align: inherit; }
+  .no-reset s, .no-reset strike, .no-reset del {
+    text-decoration: line-through; }
+  .no-reset hr {
+    border: 1px inset; }
+  .no-reset ol {
+    list-style-type: decimal; }
+  .no-reset ol ul, .no-reset ul ol,
+  .no-reset ul ul, .no-reset ol ol {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .no-reset u, .no-reset ins {
+    text-decoration: underline; }
+  .no-reset br:before {
+    content: "\A";
+    white-space: pre-line; }
+  .no-reset center {
+    text-align: center; }
+  .no-reset :link, .no-reset :visited {
+    text-decoration: underline; }
+  .no-reset :focus {
+    outline: thin dotted invert; }
+  .no-reset BDO[DIR="ltr"] {
+    direction: ltr;
+    unicode-bidi: bidi-override; }
+  .no-reset BDO[DIR="rtl"] {
+    direction: rtl;
+    unicode-bidi: bidi-override; }
+  .no-reset *[DIR="ltr"] {
+    direction: ltr;
+    unicode-bidi: embed; }
+  .no-reset *[DIR="rtl"] {
+    direction: rtl;
+    unicode-bidi: embed; }
+  @media print {
+    .no-reset h1 {
+      page-break-before: always; }
+    .no-reset h1, .no-reset h2, .no-reset h3,
+    .no-reset h4, .no-reset h5, .no-reset h6 {
+      page-break-after: avoid; }
+    .no-reset ul, .no-reset ol, .no-reset dl {
+      page-break-before: avoid; } }
 
 /* -------------------
   VARIABLES
