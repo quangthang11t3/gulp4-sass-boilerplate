@@ -1,8 +1,28 @@
 const gulp = require('gulp');
+const fileinclude = require('gulp-file-include');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 // const minify = require('gulp-minify-css');
+
+
+const paths = {
+  scripts: {
+    src: 'src/',
+    dest: 'src/build/'
+  }
+};
+
+function includeHTML(){
+  return gulp.src([
+    'src/**/*.html'
+    ])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest(paths.scripts.dest));
+}
 
 //compile scss into css
 function style() {
@@ -23,7 +43,7 @@ function style() {
 function watch() {
   browserSync.init({
     server: {
-      baseDir: "./src",
+      baseDir: "./src/build",
       index: "/index.html"
     }
   });
@@ -35,8 +55,11 @@ function watch() {
 
 function defaultTask() {
   watch();
+  includeHTML();
+
 }
 
 exports.style = style;
 exports.watch = watch;
 exports.default = defaultTask;
+exports.includeHTML = includeHTML;
