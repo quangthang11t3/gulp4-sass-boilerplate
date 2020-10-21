@@ -523,17 +523,14 @@ textarea {
   HEADER
 --------------------*/
 .header {
-  height: 100px;
-  border: solid 20px green;
-  background-color: red;
-  font-size: 0.875rem; }
-  @media screen and (max-width: 767px) {
-    .header {
-      background-color: yellow; } }
+  color: red; }
 
 /* -------------------
   FOOTER
 --------------------*/
+.footer {
+  color: blue; }
+
 /* -------------------
   TOP PAGE
 --------------------*/

@@ -8,14 +8,18 @@ const sourcemaps = require('gulp-sourcemaps');
 
 const paths = {
   scripts: {
-    src: 'src/',
-    dest: 'src/build/'
+    src: 'src/coding-html/layouts/',
+    dest: 'src/'
   }
 };
 
 function includeHTML(){
   return gulp.src([
-    'src/**/*.html'
+    'src/coding-html/**/*.html',
+    '!src/coding-html/**/header.html',
+    '!src/coding-html/**/header-end.html',
+    '!src/coding-html/**/footer.html',
+    '!src/coding-html/**/footer-end.html'
     ])
     .pipe(fileinclude({
       prefix: '@@',
@@ -43,7 +47,7 @@ function style() {
 function watch() {
   browserSync.init({
     server: {
-      baseDir: "./src/build",
+      baseDir: "./src",
       index: "/index.html"
     }
   });

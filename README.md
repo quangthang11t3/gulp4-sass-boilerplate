@@ -1,4 +1,6 @@
-## Simple Setup to Automate HTML and SaSS changes using GULP4 and BrowserSync
+## Simple Setup to Automate HTML and SaSS changes using GULP4, BrowserSync and Gulp File Include.
+
+First of all, you need to install gulp 4 globally and yarn packages.
 
 
 ## To Run the Project
@@ -17,12 +19,7 @@ $ npm install gulp -g
 Then run the command below.
 
 ```
-$ gulp
-```
-or
-
-```
-$ gulp watch
+$ yarn gulp
 ```
 
 If you want to try running testing the browser without installing gulp globally. 
@@ -33,3 +30,4 @@ $ node_modules/gulp/bin/gulp.js watch
 ```
 
 Browsersync should automatically open a browser on port 3000.
+
