@@ -16,10 +16,7 @@ const paths = {
 function includeHTML(){
   return gulp.src([
     'src/coding-html/**/*.html',
-    '!src/coding-html/**/header.html',
-    '!src/coding-html/**/header-end.html',
-    '!src/coding-html/**/footer.html',
-    '!src/coding-html/**/footer-end.html'
+    '!src/coding-html/layouts/**/*.html'
     ])
     .pipe(fileinclude({
       prefix: '@@',
