@@ -15,7 +15,7 @@ const paths = {
 
 function includeHTML(){
   return gulp.src([
-    'src/coding-html/**/*.html',
+    'src/coding-html/**/**/*.html',
     '!src/coding-html/layouts/**/*.html'
     ])
     .pipe(fileinclude({
