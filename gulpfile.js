@@ -50,8 +50,11 @@ function watch() {
   });
   gulp.watch('src/assets/scss/**/*.scss', style);
   gulp.watch('src/assets/scss/**/*.scss').on('change', browserSync.reload);
-  gulp.watch('./**/*.html').on('change', browserSync.reload);
   gulp.watch('src/assets/js/**/*.js').on('change', browserSync.reload);
+  gulp.watch('src/coding-html/**/**/*.html').on('change', browserSync.reload);
+  gulp.watch('src/coding-html/**/**/*.html').on('change', function() {
+    includeHTML();
+  });
 }
 
 function defaultTask() {
