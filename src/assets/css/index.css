@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* -------------------
   RESET
 --------------------*/
@@ -178,6 +179,7 @@ button,
 input,
 select,
 textarea {
+  font-family: inherit;
   font-size: 100%;
   /* 1 */
   margin: 0;
@@ -501,23 +503,44 @@ textarea {
 /* -------------------
   COMMON
 --------------------*/
+body {
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
+  body.fixed {
+    height: 100vh;
+    overflow: hidden;
+    display: flex; }
+
 .pc-only {
   display: block; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1050px) {
     .pc-only {
       display: none !important; } }
 
 .pc-only2 {
   display: inline-block; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1050px) {
     .pc-only2 {
       display: none !important; } }
 
 .sp-only {
   display: none; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1050px) {
     .sp-only {
       display: block !important; } }
+
+.wrapper {
+  overflow: hidden; }
+  @media screen and (max-width: 1050px) {
+    .wrapper {
+      min-width: 100%; } }
+
+.container {
+  position: relative;
+  width: 1040px;
+  margin: 0 auto; }
+  @media screen and (max-width: 1050px) {
+    .container {
+      width: 100%; } }
 
 /* -------------------
   HEADER

@@ -21,8 +21,9 @@
 // =========================================
 $breakpoints: (
 	'sm2': 'screen and (max-width: 350px)', // <- Small SmartPhone (iPhone5,..)
-  'sm': 'screen and (max-width: 767px)', // <- Big SmartPhone (iPhoneX,..)
-  'tb': 'screen and (min-width: 768px) and (max-width: 1050px)', // <- Table Only (iPad, iPad Pro,..)
+  'sm3': 'screen and (min-width: 768px) and (max-width: 948px)', // <- Medium SmartPhone (iPhoneX,..)
+  'sm': 'screen and (max-width: 1050px)', // <- Big SmartPhone (iPhoneX,..)
+  'tb': 'screen and (min-width: 950px) and (max-width: 1050px)', // <- Table Only (iPad, iPad Pro,..)
   'pc': 'screen and (min-width: 1080px)', // <- PC
   'pc2': 'screen and (min-width: 1200px)', // <- PC2
 ) !default;

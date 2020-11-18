@@ -17,6 +17,15 @@
 //        url('../font/EuclidFlex/EuclidFlex-Regular.svg#svgFontName') format('svg'); // Legacy iOS
 // }
 
+body {
+  font-family: $font-base;
+  &.fixed {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+  }
+}
+
 
 // =========================================
 // CONTROL VIEW ELEMENT
@@ -43,3 +52,36 @@
 	}
 }
 
+
+// =========================================
+// WRAPPER
+// =========================================
+.wrapper {
+  // min-width: 1400px;
+  overflow: hidden;
+  // padding-top: 90px;
+  @include mq() {
+    min-width: 100%;
+    // padding-top: 50px;
+  }
+}
+
+// =========================================
+// MAIN
+// =========================================
+.main {
+  // padding-bottom: 80px;
+  // background-color: #F7F6ED;
+}
+
+// =========================================
+// CONTAINER
+// =========================================
+.container {
+  position: relative;
+  width: 1040px;
+  margin: 0 auto;
+  @include mq() {
+    width: 100%;
+  }
+}
